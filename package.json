@@ -54,6 +54,7 @@
   "scripts": {
     "security": "npm audit --omit=dev",
     "lint:spell": "cspell lint --color --show-context \"**/*.md\"",
+    "lint:md": "markdownlint-cli2 \"**/*.md\" \"!**/node_modules/**\" \"!test/**\" \"!examples/**\" \"!experiments/**\"",
     "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" jest --config ./test/jest.config.js",
     "test:coverage": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" jest --collectCoverage --config ./test/jest.config.js",
     "test:index": "jest --detectOpenHandles --config ./test/jest.config.js --runTestsByPath ./test/index.test.js",
@@ -186,6 +187,7 @@
     "jest": "^29.7.0",
     "liquidjs": "^10.18.0",
     "markdown-it": "^14.1.0",
+    "markdownlint-cli2": "^0.17.2",
     "mini-svg-data-uri": "^1.4.4",
     "mustache": "^4.2.0",
     "normalize.css": "^8.0.1",
