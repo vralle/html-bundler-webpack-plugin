@@ -21,8 +21,8 @@
 > website from your source assets.
 
 The plugin automates the processing of source files such as JS/TS, SCSS, images,
-and other assets referenced in an HTML or template file. This plugin will
-generate an HTML file containing all the necessary links to JS, CSS, images and
+and other assets referenced in an HTML or template file. This plugin generates
+an HTML file containing all the necessary links to JS, CSS, images, and
 other resources.
 
 ## Why use the HTML Bundler Plugin?
@@ -30,19 +30,19 @@ other resources.
 This plugin is a powerful alternative to [html-webpack-plugin][html-webpack-plugin-url]
 and a replacement for many [plugins and loaders](#list-of-plugins).
 
-The HTML Bundler Plugin works a bit differently than `html-webpack-plugin`. It
+The HTML Bundler Plugin works differently from `html-webpack-plugin`. It
 doesn't just inject JavaScript and CSS into HTML. Instead, it resolves all
-the source files of the assets referenced directly in the template and ensures
+the source files of assets referenced directly in the template and ensures
 the generated HTML contains the correct output URLs of resources after Webpack
 processes them. Additionally, CSS extracted from styles imported in JS can be
-injected into HTML as a `<link>` tag or as an inlined CSS.
+injected into HTML as a `<link>` tag or as inlined CSS.
 
 ---
 
 <h3 align="center">
   📋 <a href="#contents">Table of Contents</a>
   🚀 <a href="#install">Install and Quick Start</a>
-  🖼 <a href="#usage-examples">Usage examples</a>
+  🖼 <a href="#usage-examples">Usage Examples</a>
   🔆 <a href="#whats-new">What's New</a>
 </h3>
 
@@ -2365,9 +2365,9 @@ Default properties:
   (hot update CSS without a full reload),\
   similar to how it works in [style-loader][style-loader-url].
 
-All source style files specified in `<link href="..." rel="stylesheet">`
-are automatically resolved, and CSS will be extracted to output file.
-The source filename will be replaced with the output filename.
+All source style files specified in `<link href="..." rel="stylesheet">` are
+automatically resolved, and CSS will be extracted to output file. The source
+filename will be replaced with the output filename.
 
 For example:
 
